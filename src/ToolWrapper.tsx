@@ -30,7 +30,7 @@ export default function ToolWrapper({
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			const payload = JSON.stringify({
-				contentId: `tool-${toolName.toLowerCase().replace(/\s+/g, "-")}`,
+				id: `tool-${toolName.toLowerCase().replace(/\s+/g, "-")}`,
 			});
 			try {
 				if (typeof navigator !== "undefined" && "sendBeacon" in navigator) {
